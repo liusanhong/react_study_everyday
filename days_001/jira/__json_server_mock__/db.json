@@ -1,0 +1,1809 @@
+{
+  "info": {
+    "_postman_id": "58f8643b-5453-4d56-9f14-caeace6a104c",
+    "name": "pionex_lite",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "paxos",
+      "item": [
+        {
+          "name": "kyc_status_未授权时的返回状态",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYWNjb3VudC9hY2Nlc3MiLCJleHAiOjE2MjAzNzQxMjgsImp0aSI6IjM0M2U3MDA1LTdlNzItNDBiZS1hZTc2LTZlZTNjZTI3MjViYyIsImlhdCI6MTYyMDM3MDUyOCwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvc2lnbmVyIiwic3ViIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvYWNjZXNzIiwidmVyc2lvbiI6IjEuMCIsImRhdGEiOnsidXNlcl9pZCI6IjAyNzAyYjM2LWE3YjYtNGJjYy1hYzllLWIzZGFkZDUyMzNkYiIsImNsaWVudF9pZCI6InBpb25leExpdGVfaW9zXzEwMTAwMDIiLCJkZXZpY2VfaWQiOiIwQjdBNTM4Qi03MDc3LTQwRjktOTkxNi02MzMzQzExOTRBNTYiLCJmYXRoZXJfaWQiOiJkZDFiY2Y3Zi05ZTM3LTQwZmEtODcyYy1iNmJjNTk3MjVjYjgifX0.8_N-tVwPC9KIawlfVCFGLX8zG3muHT3qyGZAs6Gej9_v1MFtOKZsPurABENZEkdirTDMiBzWCxVoRU4I7hfXWw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lite.pionex.com/lite/paxos/private/kyc_status/?device_id=0B7A538B-7077-40F9-9916-6333C1194A56&app_ver=1010002&os=ios&os_api=13.6&tz_offset=28800&sys_lang=zh-CN&sys_region=zh-Hans&brand=iPhone&model=iPhone8%2C1",
+              "protocol": "https",
+              "host": [
+                "lite",
+                "pionex",
+                "com"
+              ],
+              "path": [
+                "lite",
+                "paxos",
+                "private",
+                "kyc_status",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "device_id",
+                  "value": "0B7A538B-7077-40F9-9916-6333C1194A56"
+                },
+                {
+                  "key": "app_ver",
+                  "value": "1010002"
+                },
+                {
+                  "key": "os",
+                  "value": "ios"
+                },
+                {
+                  "key": "os_api",
+                  "value": "13.6"
+                },
+                {
+                  "key": "tz_offset",
+                  "value": "28800"
+                },
+                {
+                  "key": "sys_lang",
+                  "value": "zh-CN"
+                },
+                {
+                  "key": "sys_region",
+                  "value": "zh-Hans"
+                },
+                {
+                  "key": "brand",
+                  "value": "iPhone"
+                },
+                {
+                  "key": "model",
+                  "value": "iPhone8%2C1"
+                }
+              ]
+            },
+            "description": "判断paxos授权状态"
+          },
+          "response": [
+            {
+              "name": "kyc_status_未授权时",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/kyc_status/?device_id=0B7A538B-7077-40F9-9916-6333C1194A56&app_ver=1010002&os=ios&os_api=13.6&tz_offset=28800&sys_lang=zh-CN&sys_region=zh-Hans&brand=iPhone&model=iPhone8%2C1",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "kyc_status",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "0B7A538B-7077-40F9-9916-6333C1194A56"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "1010002"
+                    },
+                    {
+                      "key": "os",
+                      "value": "ios"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "13.6"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "zh-Hans"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "iPhone"
+                    },
+                    {
+                      "key": "model",
+                      "value": "iPhone8%2C1"
+                    }
+                  ]
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "156"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:00:09 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Error from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 00831430bdf5c6de78e9cd44c46a222b.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "CXMw1ycXpwdRfd_fQE6lcVukOUb0dlo6oqGNUhCEZnM_RCDF80gF4w=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 40101600,\n    \"message\": \"rpc error: code = Unknown desc = refresh token error rpc error: code = Unauthenticated desc = No found Paxos token\",\n    \"data\": null\n}"
+            },
+            {
+              "name": "kyc_status_未授权时",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/kyc_status/?device_id=0B7A538B-7077-40F9-9916-6333C1194A56&app_ver=1010002&os=ios&os_api=13.6&tz_offset=28800&sys_lang=zh-CN&sys_region=zh-Hans&brand=iPhone&model=iPhone8%2C1",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "kyc_status",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "0B7A538B-7077-40F9-9916-6333C1194A56"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "1010002"
+                    },
+                    {
+                      "key": "os",
+                      "value": "ios"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "13.6"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "zh-Hans"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "iPhone"
+                    },
+                    {
+                      "key": "model",
+                      "value": "iPhone8%2C1"
+                    }
+                  ]
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "156"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 08:38:29 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Error from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7dd41ad962a1f6459b98a69abf87ab52.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "N2F53SnUp_oBNEXjdw0gYkYBov5iTtqn5b8fHADZykEXVbanXS7Plw=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 40101600,\n    \"message\": \"rpc error: code = Unknown desc = refresh token error rpc error: code = Unauthenticated desc = No found Paxos token\",\n    \"data\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "kyc_status_授权后的返回状态；添加银行时，获取个人信息",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYWNjb3VudC9hY2Nlc3MiLCJleHAiOjE2MjAzNzI3NjMsImp0aSI6ImE1YmYzZmZiLWNmYzAtNDZjZi1iNzI5LTVhZTM3OTFiOTE0NiIsImlhdCI6MTYyMDM2OTE2MywiaXNzIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvc2lnbmVyIiwic3ViIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvYWNjZXNzIiwidmVyc2lvbiI6IjEuMCIsImRhdGEiOnsidXNlcl9pZCI6IjQ5MGUwYmM0LTE4ZmQtNDg2Mi04YzdhLTIxZTQ3MDhhMzJjZSIsImNsaWVudF9pZCI6InBpb25leExpdGVfYW5kcm9pZF8xMDEwMiIsImRldmljZV9pZCI6Ijc1MmU3ZGVjOThiNzkwZWQiLCJmYXRoZXJfaWQiOiI3YzE0OGQyMS1mMjMyLTRkMTAtODhmMC04MDNlZGJjZDc3ZjAifX0.rfgsQzibyoMNU0vaM5vzgJoAbOXMXueOBTmcQ7FzV5TI_CvvLxGDhfrFVNhPtiEsRjXJ5UWcEo5AEfjZG3W86w",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lite.pionex.com/lite/paxos/private/kyc_status/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+              "protocol": "https",
+              "host": [
+                "lite",
+                "pionex",
+                "com"
+              ],
+              "path": [
+                "lite",
+                "paxos",
+                "private",
+                "kyc_status",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "device_id",
+                  "value": "752e7dec98b790ed"
+                },
+                {
+                  "key": "app_ver",
+                  "value": "10102"
+                },
+                {
+                  "key": "os",
+                  "value": "android"
+                },
+                {
+                  "key": "os_api",
+                  "value": "29"
+                },
+                {
+                  "key": "tz_offset",
+                  "value": "28800"
+                },
+                {
+                  "key": "sys_lang",
+                  "value": "zh-CN"
+                },
+                {
+                  "key": "sys_region",
+                  "value": "CN"
+                },
+                {
+                  "key": "brand",
+                  "value": "HUAWEI"
+                },
+                {
+                  "key": "model",
+                  "value": "TAS-AL00"
+                }
+              ]
+            },
+            "description": "判断paxos的授权状态，\n添加银行时，获取个人信息"
+          },
+          "response": [
+            {
+              "name": "kyc_status_授权时",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/kyc_status/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "kyc_status",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "407"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:03:17 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 00831430bdf5c6de78e9cd44c46a222b.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "VdY_jv3wTkZR1PgCr7KuadWJrk2EzNmvxQ9r8TkqFSWevYgK6lOVCA=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"custStatus\": {\n            \"kycStatus\": \"KYC_STATUS_APPROVED\",\n            \"accountStatus\": \"APPROVED\",\n            \"institutionality\": \"INDIVIDUAL\"\n        },\n        \"customerId\": \"e00ef48d-5e3a-47ff-aa91-f966ac7052e9\",\n        \"firstName\": \"liu\",\n        \"lastName\": \"tianhao\",\n        \"officialName\": \"liu tianhao\",\n        \"address\": {\n            \"country\": \"China\",\n            \"address1\": \"Beijing Chaoyang district\",\n            \"address2\": \"\",\n            \"city\": \"beijing\",\n            \"province\": \"beijing\",\n            \"zipCode\": \"100020\"\n        }\n    }\n}"
+            },
+            {
+              "name": "kyc_status_授权时",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/kyc_status/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "kyc_status",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "407"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:03:17 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 00831430bdf5c6de78e9cd44c46a222b.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "VdY_jv3wTkZR1PgCr7KuadWJrk2EzNmvxQ9r8TkqFSWevYgK6lOVCA=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"custStatus\": {\n            \"kycStatus\": \"KYC_STATUS_APPROVED\",\n            \"accountStatus\": \"APPROVED\",\n            \"institutionality\": \"INDIVIDUAL\"\n        },\n        \"customerId\": \"e00ef48d-5e3a-47ff-aa91-f966ac7052e9\",\n        \"firstName\": \"liu\",\n        \"lastName\": \"tianhao\",\n        \"officialName\": \"liu tianhao\",\n        \"address\": {\n            \"country\": \"China\",\n            \"address1\": \"Beijing Chaoyang district\",\n            \"address2\": \"\",\n            \"city\": \"beijing\",\n            \"province\": \"beijing\",\n            \"zipCode\": \"100020\"\n        }\n    }\n}"
+            },
+            {
+              "name": "kyc_status_授权时",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/kyc_status/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "kyc_status",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "411"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 08:37:20 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7dd41ad962a1f6459b98a69abf87ab52.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "3X0yQFqirZ5ZHUnCSdJ_jJTtAAAYLrMbTIrJb2kcHDYJYmQHaK0t3g=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"custStatus\": {\n            \"kycStatus\": \"KYC_STATUS_APPROVED\",\n            \"accountStatus\": \"APPROVED\",\n            \"institutionality\": \"INDIVIDUAL\"\n        },\n        \"customerId\": \"b1215278-167f-40b1-b037-126bb3f68f37\",\n        \"firstName\": \"xing\",\n        \"lastName\": \"jingjing\",\n        \"officialName\": \"xing jingjing\",\n        \"address\": {\n            \"country\": \"China\",\n            \"address1\": \"beijing  chaoyang yabaolu\",\n            \"address2\": \"\",\n            \"city\": \"beijing\",\n            \"province\": \"yabaolu\",\n            \"zipCode\": \"100020\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "pionex_address_auto_conv_instructions-获取pionex_lite的充值信息",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYWNjb3VudC9hY2Nlc3MiLCJleHAiOjE2MjAzNzI3NjMsImp0aSI6ImE1YmYzZmZiLWNmYzAtNDZjZi1iNzI5LTVhZTM3OTFiOTE0NiIsImlhdCI6MTYyMDM2OTE2MywiaXNzIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvc2lnbmVyIiwic3ViIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvYWNjZXNzIiwidmVyc2lvbiI6IjEuMCIsImRhdGEiOnsidXNlcl9pZCI6IjQ5MGUwYmM0LTE4ZmQtNDg2Mi04YzdhLTIxZTQ3MDhhMzJjZSIsImNsaWVudF9pZCI6InBpb25leExpdGVfYW5kcm9pZF8xMDEwMiIsImRldmljZV9pZCI6Ijc1MmU3ZGVjOThiNzkwZWQiLCJmYXRoZXJfaWQiOiI3YzE0OGQyMS1mMjMyLTRkMTAtODhmMC04MDNlZGJjZDc3ZjAifX0.rfgsQzibyoMNU0vaM5vzgJoAbOXMXueOBTmcQ7FzV5TI_CvvLxGDhfrFVNhPtiEsRjXJ5UWcEo5AEfjZG3W86w",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "tradetoken",
+                "value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYXBpLXRyYWRpbmcvdHJhZGUiLCJleHAiOjE2MjAzNzI3MjIsImp0aSI6ImFkNDY0MTliLWMxYjctNDkzMi1iZGMyLTUzZWMwZWI1ZTljMCIsImlhdCI6MTYyMDM3MDkyMiwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL3RyYWRlL3NpZ25lciIsInN1YiI6ImJpdHVuaXZlcnNlLm9yZy9hcGktdHJhZGluZy90cmFkZSIsInZlcnNpb24iOiIxLjAiLCJkYXRhIjp7InVzZXJfaWQiOiI0OTBlMGJjNC0xOGZkLTQ4NjItOGM3YS0yMWU0NzA4YTMyY2UiLCJrZXlfaWQiOiIzMzhkNzhjOTAwYzRjNjRkODY1NDA4OTlkMzUwOWQxOCIsImV4Y2hhbmdlIjoicGlvbmV4LnYyIiwiYXBpX2tleSI6IjRlNzlhZTBjLWZjMmItNDViNS04NWI4LTU4MjIyZGJiYzBjMCJ9fQ.QfJaarDdA6rU7CpwmBoo_mdQ5hMeUf_ZaxUJ25-we7a-stzplyBDZKhZEEGJAd02Pq4Of9zc9rWVcdFAb6N6VA",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://lite.pionex.com/lite/paxos/private/pionex_address_auto_conv_instructions/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+              "protocol": "https",
+              "host": [
+                "lite",
+                "pionex",
+                "com"
+              ],
+              "path": [
+                "lite",
+                "paxos",
+                "private",
+                "pionex_address_auto_conv_instructions",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "device_id",
+                  "value": "752e7dec98b790ed"
+                },
+                {
+                  "key": "app_ver",
+                  "value": "10102"
+                },
+                {
+                  "key": "os",
+                  "value": "android"
+                },
+                {
+                  "key": "os_api",
+                  "value": "29"
+                },
+                {
+                  "key": "tz_offset",
+                  "value": "28800"
+                },
+                {
+                  "key": "sys_lang",
+                  "value": "zh-CN"
+                },
+                {
+                  "key": "sys_region",
+                  "value": "CN"
+                },
+                {
+                  "key": "brand",
+                  "value": "HUAWEI"
+                },
+                {
+                  "key": "model",
+                  "value": "TAS-AL00"
+                }
+              ]
+            },
+            "description": "获取paxox充值到pionex_lite的信息"
+          },
+          "response": [
+            {
+              "name": "pionex_address_auto_conv_instructions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "tradetoken",
+                    "value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYXBpLXRyYWRpbmcvdHJhZGUiLCJleHAiOjE2MjAzNzI3MjIsImp0aSI6ImFkNDY0MTliLWMxYjctNDkzMi1iZGMyLTUzZWMwZWI1ZTljMCIsImlhdCI6MTYyMDM3MDkyMiwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL3RyYWRlL3NpZ25lciIsInN1YiI6ImJpdHVuaXZlcnNlLm9yZy9hcGktdHJhZGluZy90cmFkZSIsInZlcnNpb24iOiIxLjAiLCJkYXRhIjp7InVzZXJfaWQiOiI0OTBlMGJjNC0xOGZkLTQ4NjItOGM3YS0yMWU0NzA4YTMyY2UiLCJrZXlfaWQiOiIzMzhkNzhjOTAwYzRjNjRkODY1NDA4OTlkMzUwOWQxOCIsImV4Y2hhbmdlIjoicGlvbmV4LnYyIiwiYXBpX2tleSI6IjRlNzlhZTBjLWZjMmItNDViNS04NWI4LTU4MjIyZGJiYzBjMCJ9fQ.QfJaarDdA6rU7CpwmBoo_mdQ5hMeUf_ZaxUJ25-we7a-stzplyBDZKhZEEGJAd02Pq4Of9zc9rWVcdFAb6N6VA",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/pionex_address_auto_conv_instructions/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "pionex_address_auto_conv_instructions",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:14:50 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7d7a3c2bfaf3829a0c2cf20c167810af.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "dBSzV4VgKoVFan_A3RPYBBhd8IVnwY0aMZpdqTOwh_uoonfNulPGfA=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"ethNetwork\": {\n            \"depositAddress\": \"0x49054AB004030b5ffe1a56d38Adf04dadD2fB2B0\"\n        },\n        \"wire\": {\n            \"depositMemo\": {\n                \"memo\": \"L5EIQB7B2D7M3W5Y\",\n                \"destinationAssetType\": \"BUSD\"\n            },\n            \"bank\": {\n                \"name\": \"Silvergate Bank\",\n                \"country\": \"United States\",\n                \"address\": \"ATTN: Treasury Department, 4250 Executive Square, Suite 300, La Jolla, CA, 92037\",\n                \"routingNumber\": \"322286803\",\n                \"recipientName\": \"Paxos Trust Company\",\n                \"recipientAddress\": \"ATTN: Treasury Department, La Jolla, CA, 92037\",\n                \"accountNumber\": \"5090008888\",\n                \"swiftIntermediaryBankName\": \"Pacific Coast Bankers' Bank\",\n                \"swiftIntermediaryBankAddress\": \"Walnut Creek, CA 94596\",\n                \"swiftCode\": \"PCBBUS66\"\n            }\n        },\n        \"aba\": {\n            \"memoId\": \"L5EIQB7B2D7M3W5Y\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"routingNumber\": \"322286803\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"swift\": {\n            \"memoId\": \"L5EIQB7B2D7M3W5Y\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"swiftBic\": \"SIVGUS66\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"sen\": {\n            \"senName\": \"Itbit/Paxos PTE-Network\",\n            \"accountNumber\": \"5090004838\"\n        }\n    }\n}"
+            },
+            {
+              "name": "pionex_address_auto_conv_instructions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "tradetoken",
+                    "value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYXBpLXRyYWRpbmcvdHJhZGUiLCJleHAiOjE2MjAzNzI3MjIsImp0aSI6ImFkNDY0MTliLWMxYjctNDkzMi1iZGMyLTUzZWMwZWI1ZTljMCIsImlhdCI6MTYyMDM3MDkyMiwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL3RyYWRlL3NpZ25lciIsInN1YiI6ImJpdHVuaXZlcnNlLm9yZy9hcGktdHJhZGluZy90cmFkZSIsInZlcnNpb24iOiIxLjAiLCJkYXRhIjp7InVzZXJfaWQiOiI0OTBlMGJjNC0xOGZkLTQ4NjItOGM3YS0yMWU0NzA4YTMyY2UiLCJrZXlfaWQiOiIzMzhkNzhjOTAwYzRjNjRkODY1NDA4OTlkMzUwOWQxOCIsImV4Y2hhbmdlIjoicGlvbmV4LnYyIiwiYXBpX2tleSI6IjRlNzlhZTBjLWZjMmItNDViNS04NWI4LTU4MjIyZGJiYzBjMCJ9fQ.QfJaarDdA6rU7CpwmBoo_mdQ5hMeUf_ZaxUJ25-we7a-stzplyBDZKhZEEGJAd02Pq4Of9zc9rWVcdFAb6N6VA",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/pionex_address_auto_conv_instructions/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "pionex_address_auto_conv_instructions",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:14:50 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7d7a3c2bfaf3829a0c2cf20c167810af.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "dBSzV4VgKoVFan_A3RPYBBhd8IVnwY0aMZpdqTOwh_uoonfNulPGfA=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"ethNetwork\": {\n            \"depositAddress\": \"0x49054AB004030b5ffe1a56d38Adf04dadD2fB2B0\"\n        },\n        \"wire\": {\n            \"depositMemo\": {\n                \"memo\": \"L5EIQB7B2D7M3W5Y\",\n                \"destinationAssetType\": \"BUSD\"\n            },\n            \"bank\": {\n                \"name\": \"Silvergate Bank\",\n                \"country\": \"United States\",\n                \"address\": \"ATTN: Treasury Department, 4250 Executive Square, Suite 300, La Jolla, CA, 92037\",\n                \"routingNumber\": \"322286803\",\n                \"recipientName\": \"Paxos Trust Company\",\n                \"recipientAddress\": \"ATTN: Treasury Department, La Jolla, CA, 92037\",\n                \"accountNumber\": \"5090008888\",\n                \"swiftIntermediaryBankName\": \"Pacific Coast Bankers' Bank\",\n                \"swiftIntermediaryBankAddress\": \"Walnut Creek, CA 94596\",\n                \"swiftCode\": \"PCBBUS66\"\n            }\n        },\n        \"aba\": {\n            \"memoId\": \"L5EIQB7B2D7M3W5Y\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"routingNumber\": \"322286803\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"swift\": {\n            \"memoId\": \"L5EIQB7B2D7M3W5Y\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"swiftBic\": \"SIVGUS66\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"sen\": {\n            \"senName\": \"Itbit/Paxos PTE-Network\",\n            \"accountNumber\": \"5090004838\"\n        }\n    }\n}"
+            },
+            {
+              "name": "pionex_address_auto_conv_instructions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "tradetoken",
+                    "value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYXBpLXRyYWRpbmcvdHJhZGUiLCJleHAiOjE2MjAzNzgzMjksImp0aSI6IjBmYmE0MGY4LTcwMTItNDBhZS05YWRiLTk1MzliOTcxNmU3OSIsImlhdCI6MTYyMDM3NjUyOSwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL3RyYWRlL3NpZ25lciIsInN1YiI6ImJpdHVuaXZlcnNlLm9yZy9hcGktdHJhZGluZy90cmFkZSIsInZlcnNpb24iOiIxLjAiLCJkYXRhIjp7InVzZXJfaWQiOiJmZWMyNGE5MC1lOWNmLTRhYmQtYmZkMy1jMjdkNDJiZDlhYzIiLCJrZXlfaWQiOiIwZWUzZTJmYTNlYTI2Y2QyZjA0ODVhMTkzNjc0YmNkZCIsImV4Y2hhbmdlIjoicGlvbmV4LnYyIiwiYXBpX2tleSI6IjAzMDE1YWE0LWQ0OTEtNDYwMy05NmRmLTc4ZDk0YTkzNDFjMCJ9fQ.BV7jX00A6G_jHFHbWwrKoiQA1BgQ86L8u3nMKL2Fr8Ucu9s9nVxvp0pLW6cVpW_HHYAw-i9KsqCkijgELHKm4w",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/pionex_address_auto_conv_instructions/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "pionex_address_auto_conv_instructions",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 08:36:38 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7dd41ad962a1f6459b98a69abf87ab52.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "QyO3XTeLemLrtjv8qLlVG4mf2roRrsIyQBS34vcJwKGq88hbimqNfg=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"ethNetwork\": {\n            \"depositAddress\": \"0x30B38Df37D918d239D9Efac56077612DBb66Fc65\"\n        },\n        \"wire\": {\n            \"depositMemo\": {\n                \"memo\": \"L5EKEAQPHNZH656Q\",\n                \"destinationAssetType\": \"BUSD\"\n            },\n            \"bank\": {\n                \"name\": \"Silvergate Bank\",\n                \"country\": \"United States\",\n                \"address\": \"ATTN: Treasury Department, 4250 Executive Square, Suite 300, La Jolla, CA, 92037\",\n                \"routingNumber\": \"322286803\",\n                \"recipientName\": \"Paxos Trust Company\",\n                \"recipientAddress\": \"ATTN: Treasury Department, La Jolla, CA, 92037\",\n                \"accountNumber\": \"5090008888\",\n                \"swiftIntermediaryBankName\": \"Pacific Coast Bankers' Bank\",\n                \"swiftIntermediaryBankAddress\": \"Walnut Creek, CA 94596\",\n                \"swiftCode\": \"PCBBUS66\"\n            }\n        },\n        \"aba\": {\n            \"memoId\": \"L5EKEAQPHNZH656Q\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"routingNumber\": \"322286803\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"swift\": {\n            \"memoId\": \"L5EKEAQPHNZH656Q\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"swiftBic\": \"SIVGUS66\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"sen\": {\n            \"senName\": \"Itbit/Paxos PTE-Network\",\n            \"accountNumber\": \"5090004838\"\n        }\n    }\n}"
+            },
+            {
+              "name": "pionex_address_auto_conv_instructions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "tradetoken",
+                    "value": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYXBpLXRyYWRpbmcvdHJhZGUiLCJleHAiOjE2MjAzNzI3MjIsImp0aSI6ImFkNDY0MTliLWMxYjctNDkzMi1iZGMyLTUzZWMwZWI1ZTljMCIsImlhdCI6MTYyMDM3MDkyMiwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL3RyYWRlL3NpZ25lciIsInN1YiI6ImJpdHVuaXZlcnNlLm9yZy9hcGktdHJhZGluZy90cmFkZSIsInZlcnNpb24iOiIxLjAiLCJkYXRhIjp7InVzZXJfaWQiOiI0OTBlMGJjNC0xOGZkLTQ4NjItOGM3YS0yMWU0NzA4YTMyY2UiLCJrZXlfaWQiOiIzMzhkNzhjOTAwYzRjNjRkODY1NDA4OTlkMzUwOWQxOCIsImV4Y2hhbmdlIjoicGlvbmV4LnYyIiwiYXBpX2tleSI6IjRlNzlhZTBjLWZjMmItNDViNS04NWI4LTU4MjIyZGJiYzBjMCJ9fQ.QfJaarDdA6rU7CpwmBoo_mdQ5hMeUf_ZaxUJ25-we7a-stzplyBDZKhZEEGJAd02Pq4Of9zc9rWVcdFAb6N6VA",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/pionex_address_auto_conv_instructions/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "pionex_address_auto_conv_instructions",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:14:50 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7d7a3c2bfaf3829a0c2cf20c167810af.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "dBSzV4VgKoVFan_A3RPYBBhd8IVnwY0aMZpdqTOwh_uoonfNulPGfA=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"ethNetwork\": {\n            \"depositAddress\": \"0x49054AB004030b5ffe1a56d38Adf04dadD2fB2B0\"\n        },\n        \"wire\": {\n            \"depositMemo\": {\n                \"memo\": \"L5EIQB7B2D7M3W5Y\",\n                \"destinationAssetType\": \"BUSD\"\n            },\n            \"bank\": {\n                \"name\": \"Silvergate Bank\",\n                \"country\": \"United States\",\n                \"address\": \"ATTN: Treasury Department, 4250 Executive Square, Suite 300, La Jolla, CA, 92037\",\n                \"routingNumber\": \"322286803\",\n                \"recipientName\": \"Paxos Trust Company\",\n                \"recipientAddress\": \"ATTN: Treasury Department, La Jolla, CA, 92037\",\n                \"accountNumber\": \"5090008888\",\n                \"swiftIntermediaryBankName\": \"Pacific Coast Bankers' Bank\",\n                \"swiftIntermediaryBankAddress\": \"Walnut Creek, CA 94596\",\n                \"swiftCode\": \"PCBBUS66\"\n            }\n        },\n        \"aba\": {\n            \"memoId\": \"L5EIQB7B2D7M3W5Y\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"routingNumber\": \"322286803\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"swift\": {\n            \"memoId\": \"L5EIQB7B2D7M3W5Y\",\n            \"beneficiaryName\": \"Paxos Trust Company\",\n            \"accountNumber\": \"5090008888\",\n            \"swiftBic\": \"SIVGUS66\",\n            \"bankName\": \"Silvergate Bank\",\n            \"beneficiaryAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"450 Lexington Ave. #3952\",\n                \"address2\": \"\",\n                \"city\": \"New York\",\n                \"province\": \"NY\",\n                \"zipCode\": \"10163\"\n            },\n            \"bankAddress\": {\n                \"country\": \"United States\",\n                \"address1\": \"ATTN: Treasury Department\",\n                \"address2\": \"4250 Executive Square, Suite 300\",\n                \"city\": \"La Jolla\",\n                \"province\": \"CA\",\n                \"zipCode\": \"92037\"\n            }\n        },\n        \"sen\": {\n            \"senName\": \"Itbit/Paxos PTE-Network\",\n            \"accountNumber\": \"5090004838\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "list_bank_accounts-获取paxos的银行列表信息",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            },
+            "description": "获取paxos的银行列表信息"
+          },
+          "response": [
+            {
+              "name": "list_bank_accounts",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/list_bank_accounts/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "list_bank_accounts",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:19:14 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7d7a3c2bfaf3829a0c2cf20c167810af.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "HODfTJ9V12RRLy0XAd8VAHutkmAu8hRRhwl071mCwRFBmzeFbmb9rg=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"107b7faf-75e8-428f-96e6-9bddb79c168c\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | WING LUNG BANK LTD.(1111111)\",\n            \"type\": \"SWIFT\",\n            \"aba\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"routingNumber\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"liu tianhao\",\n                \"accountNumber\": \"1111111\",\n                \"swiftBic\": \"WUBAHKHH\",\n                \"bankName\": \"WING LUNG BANK LTD.\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"e9a502a8-ea8e-4f44-9792-5454744504c1\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | EAST WEST BANK(66999444)\",\n            \"type\": \"ABA\",\n            \"aba\": {\n                \"beneficiaryName\": \"tianhao liu\",\n                \"accountNumber\": \"66999444\",\n                \"routingNumber\": \"322070381\",\n                \"bankName\": \"EAST WEST BANK\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"swiftBic\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"54d7d526-5176-477d-bdd5-91225b7e12c7\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | HONGKONG AND SHANGHAI BANKING CORPO(11111111)\",\n            \"type\": \"SWIFT\",\n            \"aba\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"routingNumber\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"liu tianhao\",\n                \"accountNumber\": \"11111111\",\n                \"swiftBic\": \"HSBCHKHHHKH\",\n                \"bankName\": \"HONGKONG AND SHANGHAI BANKING CORPO\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"8f0e1bb8-ae69-4b26-8f0c-55d8a95017dc\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | CHINA MINSHENG BANKING CORP., LTD.(33333333)\",\n            \"type\": \"SWIFT\",\n            \"aba\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"routingNumber\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"liu tianhao\",\n                \"accountNumber\": \"33333333\",\n                \"swiftBic\": \"MSBCHKHH\",\n                \"bankName\": \"CHINA MINSHENG BANKING CORP., LTD.\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"da284b7c-a088-43b3-8f1b-d07957da203e\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | EAST WEST BANK(36666666)\",\n            \"type\": \"ABA\",\n            \"aba\": {\n                \"beneficiaryName\": \"tianhao liu\",\n                \"accountNumber\": \"36666666\",\n                \"routingNumber\": \"322070381\",\n                \"bankName\": \"EAST WEST BANK\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"aaa123/.?:().,&'+-\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"swiftBic\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"a33d0db5-56af-4bed-89e0-e95a5ca9db0f\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | EAST WEST BANK(22222)\",\n            \"type\": \"ABA\",\n            \"aba\": {\n                \"beneficiaryName\": \"tianhao liu\",\n                \"accountNumber\": \"22222\",\n                \"routingNumber\": \"322070381\",\n                \"bankName\": \"EAST WEST BANK\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"swiftBic\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        }\n    ]\n}"
+            },
+            {
+              "name": "list_bank_accounts",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/list_bank_accounts/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "list_bank_accounts",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:19:14 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 7d7a3c2bfaf3829a0c2cf20c167810af.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "HODfTJ9V12RRLy0XAd8VAHutkmAu8hRRhwl071mCwRFBmzeFbmb9rg=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"107b7faf-75e8-428f-96e6-9bddb79c168c\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | WING LUNG BANK LTD.(1111111)\",\n            \"type\": \"SWIFT\",\n            \"aba\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"routingNumber\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"liu tianhao\",\n                \"accountNumber\": \"1111111\",\n                \"swiftBic\": \"WUBAHKHH\",\n                \"bankName\": \"WING LUNG BANK LTD.\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"e9a502a8-ea8e-4f44-9792-5454744504c1\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | EAST WEST BANK(66999444)\",\n            \"type\": \"ABA\",\n            \"aba\": {\n                \"beneficiaryName\": \"tianhao liu\",\n                \"accountNumber\": \"66999444\",\n                \"routingNumber\": \"322070381\",\n                \"bankName\": \"EAST WEST BANK\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"swiftBic\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"54d7d526-5176-477d-bdd5-91225b7e12c7\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | HONGKONG AND SHANGHAI BANKING CORPO(11111111)\",\n            \"type\": \"SWIFT\",\n            \"aba\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"routingNumber\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"liu tianhao\",\n                \"accountNumber\": \"11111111\",\n                \"swiftBic\": \"HSBCHKHHHKH\",\n                \"bankName\": \"HONGKONG AND SHANGHAI BANKING CORPO\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"8f0e1bb8-ae69-4b26-8f0c-55d8a95017dc\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | CHINA MINSHENG BANKING CORP., LTD.(33333333)\",\n            \"type\": \"SWIFT\",\n            \"aba\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"routingNumber\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"liu tianhao\",\n                \"accountNumber\": \"33333333\",\n                \"swiftBic\": \"MSBCHKHH\",\n                \"bankName\": \"CHINA MINSHENG BANKING CORP., LTD.\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"da284b7c-a088-43b3-8f1b-d07957da203e\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | EAST WEST BANK(36666666)\",\n            \"type\": \"ABA\",\n            \"aba\": {\n                \"beneficiaryName\": \"tianhao liu\",\n                \"accountNumber\": \"36666666\",\n                \"routingNumber\": \"322070381\",\n                \"bankName\": \"EAST WEST BANK\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"aaa123/.?:().,&'+-\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"swiftBic\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        },\n        {\n            \"id\": \"a33d0db5-56af-4bed-89e0-e95a5ca9db0f\",\n            \"revision\": \"1\",\n            \"nickname\": \"PIONEX | EAST WEST BANK(22222)\",\n            \"type\": \"ABA\",\n            \"aba\": {\n                \"beneficiaryName\": \"tianhao liu\",\n                \"accountNumber\": \"22222\",\n                \"routingNumber\": \"322070381\",\n                \"bankName\": \"EAST WEST BANK\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"China\",\n                    \"address1\": \"Beijing Chaoyang district\",\n                    \"address2\": \"\",\n                    \"city\": \"beijing\",\n                    \"province\": \"beijing\",\n                    \"zipCode\": \"100020\"\n                }\n            },\n            \"swift\": {\n                \"beneficiaryName\": \"\",\n                \"accountNumber\": \"\",\n                \"swiftBic\": \"\",\n                \"bankName\": \"\",\n                \"beneficiaryAddress\": {\n                    \"country\": \"\",\n                    \"address1\": \"\",\n                    \"address2\": \"\",\n                    \"city\": \"\",\n                    \"province\": \"\",\n                    \"zipCode\": \"\"\n                }\n            },\n            \"sen\": {\n                \"senName\": \"\",\n                \"accountNumber\": \"\"\n            }\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "bank_account_auto_conversion_instructions-获取提币地址",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            },
+            "description": "获取提币地址"
+          },
+          "response": [
+            {
+              "name": "bank_account_auto_conversion_instructions/",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/bank_account_auto_conversion_instructions/107b7faf-75e8-428f-96e6-9bddb79c168c/USD/?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "bank_account_auto_conversion_instructions",
+                    "107b7faf-75e8-428f-96e6-9bddb79c168c",
+                    "USD",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "109"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 07:32:37 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 28560b4527f688db980850ab34924cd4.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "8v0bdEIf32T4AjK29l4fZb7O2IyVLVW2kUDyBa6iRsOeRgahGzJIjw=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"eth\": {\n            \"depositAddress\": \"0xeD69fCa7f3Afb3eBD6172c06C9324900C7604b92\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "withdraw_2-paxos-提币",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            },
+            "description": "paxos-提币"
+          },
+          "response": [
+            {
+              "name": "withdraw_2-paxos-提币",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "trade-token",
+                    "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYXBpLXRyYWRpbmcvdHJhZGUiLCJleHAiOjE2MjAzNzgzMjksImp0aSI6IjBmYmE0MGY4LTcwMTItNDBhZS05YWRiLTk1MzliOTcxNmU3OSIsImlhdCI6MTYyMDM3NjUyOSwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL3RyYWRlL3NpZ25lciIsInN1YiI6ImJpdHVuaXZlcnNlLm9yZy9hcGktdHJhZGluZy90cmFkZSIsInZlcnNpb24iOiIxLjAiLCJkYXRhIjp7InVzZXJfaWQiOiJmZWMyNGE5MC1lOWNmLTRhYmQtYmZkMy1jMjdkNDJiZDlhYzIiLCJrZXlfaWQiOiIwZWUzZTJmYTNlYTI2Y2QyZjA0ODVhMTkzNjc0YmNkZCIsImV4Y2hhbmdlIjoicGlvbmV4LnYyIiwiYXBpX2tleSI6IjAzMDE1YWE0LWQ0OTEtNDYwMy05NmRmLTc4ZDk0YTkzNDFjMCJ9fQ.BV7jX00A6G_jHFHbWwrKoiQA1BgQ86L8u3nMKL2Fr8Ucu9s9nVxvp0pLW6cVpW_HHYAw-i9KsqCkijgELHKm4w",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJiaXR1bml2ZXJzZS5vcmcvYWNjb3VudC9hY2Nlc3MiLCJleHAiOjE2MjAzNzg0NjIsImp0aSI6IjZkNzQzZDNhLWM4ZWItNGZlNS1hMDFiLWFiNTE1ZDg3M2UwNiIsImlhdCI6MTYyMDM3NDg2MiwiaXNzIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvc2lnbmVyIiwic3ViIjoiYml0dW5pdmVyc2Uub3JnL2FjY291bnQvYWNjZXNzIiwidmVyc2lvbiI6IjEuMCIsImRhdGEiOnsidXNlcl9pZCI6ImZlYzI0YTkwLWU5Y2YtNGFiZC1iZmQzLWMyN2Q0MmJkOWFjMiIsImNsaWVudF9pZCI6InBpb25leExpdGVfYW5kcm9pZF8xMDEwMiIsImRldmljZV9pZCI6Ijc1MmU3ZGVjOThiNzkwZWQiLCJmYXRoZXJfaWQiOiI4MWYwMWU0Mi03NWI5LTRkMTktODc4ZC02MmRhMzdhM2E2ZjIifX0.PAEU-ZGZqji48JLbqZiiSoSXzAAZinW6qHGuH0hLtflzUYajfuBbIR2FhcKAT8GCRuvO_kd12mX0XcYeJQjEXA",
+                    "type": "text"
+                  },
+                  {
+                    "key": "signature",
+                    "value": "5JGkCu1w4lJvNcSn8OTKdS17Tb+wWe20GHvIrIpJJ34=",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"exchange\": \"pionex.v2\",\n\t\"coin\": \"BUSD\",\n\t\"address\": \"0xeD69fCa7f3Afb3eBD6172c06C9324900C7604b92\",\n\t\"amount\": \"100\",\n\t\"email_code\": \"111111\",\n\t\"sms_code\": \"\",\n\t\"google_code\": \"111111\",\n\t\"note\": \"\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://api.xiaoby.cn/api/broker/withdraw_v2?device_id=752e7dec98b790ed&app_ver=10102&os=android&os_api=29&tz_name=&tz_offset=28800&sys_lang=zh-CN&sys_region=CN&app_lang=undefined&brand=HUAWEI&model=TAS-AL00",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "xiaoby",
+                    "cn"
+                  ],
+                  "path": [
+                    "api",
+                    "broker",
+                    "withdraw_v2"
+                  ],
+                  "query": [
+                    {
+                      "key": "device_id",
+                      "value": "752e7dec98b790ed"
+                    },
+                    {
+                      "key": "app_ver",
+                      "value": "10102"
+                    },
+                    {
+                      "key": "os",
+                      "value": "android"
+                    },
+                    {
+                      "key": "os_api",
+                      "value": "29"
+                    },
+                    {
+                      "key": "tz_name",
+                      "value": ""
+                    },
+                    {
+                      "key": "tz_offset",
+                      "value": "28800"
+                    },
+                    {
+                      "key": "sys_lang",
+                      "value": "zh-CN"
+                    },
+                    {
+                      "key": "sys_region",
+                      "value": "CN"
+                    },
+                    {
+                      "key": "app_lang",
+                      "value": "undefined"
+                    },
+                    {
+                      "key": "brand",
+                      "value": "HUAWEI"
+                    },
+                    {
+                      "key": "model",
+                      "value": "TAS-AL00"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "html",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 08:45:34 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/html; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "x-envoy-upstream-service-time",
+                  "value": "15"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n\t\"code\": 0,\n\t\"message\": \"ok\",\n\t\"data\": {\n\t\t\"id\": \"1615278549738749385\",\n\t\t\"txid\": \"1615278549738749385\",\n\t\t\"timestamp\": 1615278549774,\n\t\t\"datetime\": \"2021-03-09T08:29:09.774Z\",\n\t\t\"address\": \"0xa1e974112e0a2dc5513398cbeb7b1c64575b3b27\",\n\t\t\"tag\": null,\n\t\t\"type\": \"withdrawal\",\n\t\t\"amount\": \"22\",\n\t\t\"currency\": \"BUSD\",\n\t\t\"status\": \"submitted\",\n\t\t\"updated\": null,\n\t\t\"fee\": null,\n\t\t\"info\": {\n\t\t\t\"data\": {\n\t\t\t\t\"txId\": \"1615278549738749385\"\n\t\t\t},\n\t\t\t\"result\": true,\n\t\t\t\"timestamp\": 1615278549774\n\t\t}\n\t}\n}"
+            }
+          ]
+        },
+        {
+          "name": "create_bank_account-添加银行",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            },
+            "description": "创建银行"
+          },
+          "response": [
+            {
+              "name": "create_bank_account",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"nickname\": \"PIONEX | CHINA CITIC BANK INTERNATIONAL LIMI(1111111222)\",\n\t\"type\": \"SWIFT\",\n\t\"swift\": {\n\t\t\"beneficiaryName\": \"LLI MMIN\",\n\t\t\"swiftBic\": \"KWHKHKHH\",\n\t\t\"accountNumber\": \"1111111\",\n\t\t\"bankName\": \"CHINA CITIC BANK INTERNATIONAL LIMI\",\n\t\t\"beneficiaryAddress\": {\n\t\t\t\"country\": \"China\",\n\t\t\t\"address1\": \"beijing chaoyang yabaolu\",\n\t\t\t\"city\": \"beijing\",\n\t\t\t\"province\": \"yabaolu\",\n\t\t\t\"zipCode\": \"100020\"\n\t\t}\n\t}\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://lite.pionex.com/lite/paxos/private/create_bank_account/",
+                  "protocol": "https",
+                  "host": [
+                    "lite",
+                    "pionex",
+                    "com"
+                  ],
+                  "path": [
+                    "lite",
+                    "paxos",
+                    "private",
+                    "create_bank_account",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "691"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 May 2021 09:17:01 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "istio-envoy"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "Miss from cloudfront"
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 0784b537a5b939ea90b3695e0ba7c236.cloudfront.net (CloudFront)"
+                },
+                {
+                  "key": "X-Amz-Cf-Pop",
+                  "value": "NRT12-C3"
+                },
+                {
+                  "key": "X-Amz-Cf-Id",
+                  "value": "742TYsZn8mhgrTV3OzoXgYV0UZjIW4MueJYk-WICooqcZKezl8pCIw=="
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"code\": 0,\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": \"771f23d9-f856-4471-abd2-abc38eee17ba\",\n        \"revision\": \"1\",\n        \"nickname\": \"PIONEX | CHINA CITIC BANK INTERNATIONAL LIMI(1111111222)\",\n        \"type\": \"SWIFT\",\n        \"aba\": {\n            \"beneficiaryName\": \"\",\n            \"accountNumber\": \"\",\n            \"routingNumber\": \"\",\n            \"bankName\": \"\",\n            \"beneficiaryAddress\": {\n                \"country\": \"\",\n                \"address1\": \"\",\n                \"address2\": \"\",\n                \"city\": \"\",\n                \"province\": \"\",\n                \"zipCode\": \"\"\n            }\n        },\n        \"swift\": {\n            \"beneficiaryName\": \"LLI MMIN\",\n            \"accountNumber\": \"1111111\",\n            \"swiftBic\": \"KWHKHKHH\",\n            \"bankName\": \"CHINA CITIC BANK INTERNATIONAL LIMI\",\n            \"beneficiaryAddress\": {\n                \"country\": \"China\",\n                \"address1\": \"beijing chaoyang yabaolu\",\n                \"address2\": \"\",\n                \"city\": \"beijing\",\n                \"province\": \"yabaolu\",\n                \"zipCode\": \"100020\"\n            }\n        },\n        \"sen\": {\n            \"senName\": \"\",\n            \"accountNumber\": \"\"\n        }\n    }\n}"
+            }
+          ]
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "circle",
+      "item": [],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
