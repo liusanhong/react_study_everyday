@@ -6,3 +6,7 @@
 
 [day003 ts学习](./docs/day_003.md)
 
+[day004 json-server 中间件的使用](./docs/day_004.md)
+
+[day005 Utility Types](./docs/day_005.md)
+
