@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import './App.less';
+import 'antd/dist/antd.less';
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -9,11 +11,11 @@ function App() {
         console.log("apiUrl::", apiUrl);
     })
 
-    const a = (b: Parameters<typeof useEffect>)=>{
-
-    }
-
-    type b = Parameters<typeof useEffect>;
+    // const a = (b: Parameters<typeof useEffect>)=>{
+    //
+    // }
+    //
+    // type b = Parameters<typeof useEffect>;
     // const xiaoMing: Partial<Person> = {name: "liu"}
 
     type Person = {
