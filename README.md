@@ -1,4 +1,4 @@
-# react 学习记录
+# react 学习教程文档
 
 [day001 创建项目](./docs/day_001.md)
 
