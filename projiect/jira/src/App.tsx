@@ -9,6 +9,20 @@ function App() {
         console.log("apiUrl::", apiUrl);
     })
 
+    const a = (b: Parameters<typeof useEffect>)=>{
+
+    }
+
+    type b = Parameters<typeof useEffect>;
+    // const xiaoMing: Partial<Person> = {name: "liu"}
+
+    type Person = {
+        name:string,
+        age:number
+    }
+
+    type keyTe = keyof Person;
+
     return (
         <div className="App">
             <header className="App-header">
