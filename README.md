@@ -20,6 +20,8 @@ tips:此处顺序和docs并不一致
 
 [day009 Emotion 样式](./docs/day_009.md)
 
+[day009 正则表达式](./docs/day_010.md)
+
 
 
 
